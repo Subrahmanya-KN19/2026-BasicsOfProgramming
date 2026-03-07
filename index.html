@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Navbar & CSS Position Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">MyWebsite</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <main class="content">
+
+    <h1>CSS Position Property</h1>
+
+    <!-- 1. STATIC -->
+    <h2>1. position: static (default)</h2>
+    <p>Elements flow one after another. top/left/right/bottom have no effect.</p>
+    <div class="demo-area">
+      <div class="box blue">Box A</div>
+      <div class="box blue">Box B</div>
+      <div class="box blue">Box C</div>
+    </div>
+
+    <!-- 2. RELATIVE -->
+    <h2>2. position: relative</h2>
+    <p>Element stays in normal flow but gets nudged using top/left/right/bottom.</p>
+    <div class="demo-area">
+      <div class="box green">Normal</div>
+      <div class="box green relative-box">Moved down+right</div>
+      <div class="box green">Normal</div>
+    </div>
+
+    <!-- 3. ABSOLUTE -->
+    <h2>3. position: absolute</h2>
+    <p>Element is removed from flow and placed inside its relative parent.</p>
+    <div class="demo-area parent-box">
+      <div class="box orange">Normal Box</div>
+      <div class="box orange absolute-box">I am absolute</div>
+    </div>
+
+    <!-- 4. FIXED -->
+    <h2>4. position: fixed</h2>
+    <p>Element sticks to the browser window. It doesn't move when you scroll.</p>
+    <p>👉 The <strong>navbar above</strong> and the <strong>red badge</strong> (bottom-right) are both fixed.</p>
+
+  </main>
+
+  <!-- This box demonstrates position: fixed -->
+  <div class="fixed-badge">Fixed!</div>
+
+</body>
+</html>
